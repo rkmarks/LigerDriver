@@ -1,0 +1,13 @@
+<?php
+	if (isset($_POST['action'])) {
+		switch ($_POST['action']) {
+			case '':
+				# code...
+				break;
+			
+			default:
+				# code...
+				break;
+		}
+	}
+?>

@@ -56,7 +56,7 @@
   <br />
   <br />
 <div class="container-fluid">
-      <form>
+      <form class="form">
         <div class="form-group">
             <div class='row'>
               <div class='col-xs-2'>
@@ -66,14 +66,14 @@
         </div>
       </div>
           <div class="form-group">
-            <label for="qty">Server Qty</label>
+            <label for="serverQty">Server Qty</label>
                 <input id="serverQty" value="0" />
                     <button id="up" onclick="changeCount('server',1)">+1</button>
           </div>
           <div class="form-group">
-            <label for="qty">Shared Qty</label>
+            <label for="sharedQty">Shared Qty</label>
               <input id="sharedQty" value="0" />
-                <button type="btn btn-default"id="Sup" onclick="changeCount('shared',1)">+1</button>
+                <button class="btn btn-default" id="Sup" onclick="changeCount('shared',1)">+1</button>
           </div>
 <br />
     <div class="ajax">
@@ -87,7 +87,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="/apps/assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

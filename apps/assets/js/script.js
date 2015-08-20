@@ -1,6 +1,6 @@
 var pleskC = document.getElementById('Plesk');
-var cpanelC = document.getElementById('cPanel')
-var ipAddr = document.getElementById('ipAddress')
+var cpanelC = document.getElementById('cPanel');
+var ipAddr = document.getElementById('ipAddress');
 function emailFunct (cpanelC, pleskC){
 	if (cpanelC == true){
 		var cpstring = "Dear Sir or Madam,\r\n";

@@ -1,6 +1,6 @@
 var ipAddr = document.getElementById('ipAddress');
 
-function emailFunct() {
+var emailFunct = function() {
   if (ipAddr == " ") {
     alert('Please enter an IP address');
     if (document.getElementById('controlPdrop').value == "cPanel") {
@@ -15,4 +15,4 @@ function emailFunct() {
   } else {
 
   }
-}
+};

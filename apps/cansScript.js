@@ -3,6 +3,7 @@ var ipAddr = document.getElementById('ipAddress');
 var emailFunct = function() {
   if (ipAddr == " ") {
     alert('Please enter an IP address');
+  } else {
     if (document.getElementById('controlPdrop').value == "cPanel") {
       var cpstring = "Dear Sir or Madam,\r\n" + ipAddr;
       document.getElementsByTagName('textarea').value = cpstring;
@@ -12,7 +13,5 @@ var emailFunct = function() {
     } else {
       alert("Please choose a control panel");
     }
-  } else {
-
   }
 };

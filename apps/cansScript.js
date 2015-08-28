@@ -6,10 +6,10 @@ var emailFunct = function() {
   } else {
     if (document.getElementById('controlPdrop').value == "cPanel") {
       var cpstring = "Dear Sir or Madam,\r\n" + ipAddr;
-      document.getElementsByTagName('textarea').value = cpstring;
+      document.getElementsByTagName("p").value = cpstring;
     } else if (document.getElementById('controlPdrop').value == "Plesk") {
       var plkstring = "Dear Sir or Madam,\r\n" + ipAddr;
-      document.getElementsByTagName('textarea').value = plkstring;
+      document.getElementsByTagName("p").value = plkstring;
     } else {
       alert("Please choose a control panel");
     }

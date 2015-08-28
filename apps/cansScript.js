@@ -1,20 +1,18 @@
 var ipAddr = document.getElementById('ipAddress');
 
-function emailFunct() {
+var emailFunct = function() {
   if (ipAddr == " ") {
     alert('Please enter an IP address');
     if (document.getElementById('controlPdrop').value == "cPanel") {
-     return
-	var cpstring = "Dear Sir or Madam,\r\n" + ipAddr;
-	document.getElementsByTagName('p').value = cpstring;
+      var cpstring = "Dear Sir or Madam,\r\n" + ipAddr;
+      document.getElementsByTagName('textarea').value = cpstring;
     } else if (document.getElementById('controlPdrop').value == "Plesk") {
-	return
-      	 var plkstring = "Dear Sir or Madam,\r\n" + ipAddr;
-      	 document.getElementsByTagName('p').value = plkstring;
+      var plkstring = "Dear Sir or Madam,\r\n" + ipAddr;
+      document.getElementsByTagName('textarea').value = plkstring;
     } else {
       alert("Please choose a control panel");
     }
   } else {
 
   }
-}
+};

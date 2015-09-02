@@ -4,7 +4,7 @@ emailFunct = function(ipAddr, usrNme) {
     alert("Please enter an IP address");
   } else {
     if (document.getElementById('controlPdrop').value == "cPanel") {
-      var cpStrg = "Valued Customer,\n\t" + "Thank you for your purchase of Managed Services." + ipAddr;
+      var cpStrg = "Valued Customer,\n\n\t" + "Thank you for your purchase of Managed Services." + ipAddr;
       document.getElementById('txtCan').value = cpStrg;
     }
     else if (document.getElementById('controlPdrop').value == "Plesk") {

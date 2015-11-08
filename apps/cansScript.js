@@ -41,6 +41,8 @@ getCookie = function(cname) {
     return "";
 }
 
+var agentName = getCookie();
+
 checkCookie = function() {
     var user=getCookie("username");
     if (user != "") {

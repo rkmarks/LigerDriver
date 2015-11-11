@@ -52,7 +52,7 @@ getCookie = function(cname) {
     }
     return "";
 }
-agentName = getCookie();
+var agentName = getCookie();
 
 var agentName = getCookie();
 

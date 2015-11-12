@@ -32,15 +32,15 @@ copytoClipboard = function () {
   aux.setAttribute("value", document.getElementById('id'))
 }
 
-//gather cookie for repeated use
-setCookie = function(cname,cvalue,exdays) {
+//create cookie for repeated use
+function setCookie(cname,cvalue,exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires=" + d.toGMTString();
     document.cookie = cname+"="+cvalue+"; "+expires;
 }
-
-getCookie = function(cname) {
+//
+function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
     for(var i=0; i<ca.length; i++) {
@@ -52,9 +52,10 @@ getCookie = function(cname) {
     }
     return "";
 }
-var agentName = getCookie();
+var agentName = checkCookie();
 
-checkCookie = function() {
+//checks for cookie if already created
+function checkCookie() {
     var user=getCookie("username");
     if (user != "") {
         alert("Welcome again " + user);

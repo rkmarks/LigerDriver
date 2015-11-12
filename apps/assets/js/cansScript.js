@@ -24,13 +24,13 @@ emailFunct = function(ipAddr, usrNme) {
 //resets the form
 resetFunct = function() {
   document.getElementById('canForm').reset();
-}
+};
 
 ///copytoClipboard function
 copytoClipboard = function () {
   var aux = document.createElement("input");
   aux.setAttribute("value", document.getElementById('id'))
-}
+};
 
 //create cookie for repeated use
 function setCookie(cname,cvalue,exdays) {
@@ -38,7 +38,7 @@ function setCookie(cname,cvalue,exdays) {
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires=" + d.toGMTString();
     document.cookie = cname+"="+cvalue+"; "+expires;
-}
+};
 //
 function getCookie(cname) {
     var name = cname + "=";
@@ -51,7 +51,7 @@ function getCookie(cname) {
         }
     }
     return "";
-}
+};
 var agentName = checkCookie();
 
 //checks for cookie if already created
@@ -65,4 +65,4 @@ function checkCookie() {
            setCookie("username", user, 30);
        }
     }
-}
+};

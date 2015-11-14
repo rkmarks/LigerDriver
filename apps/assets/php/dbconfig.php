@@ -2,7 +2,7 @@
 	$db_user = "Serv";  //MySql Username
 	$db_pw = "MUA[0lEu-hN+"; //MySql Password
 	$db_host = "localhost"; //MySql Server
-	$db_tblName = "Server_Q_calls"; //Mysql Tablename
+	$db_tblName = "ligerDriverDB"; //Mysql Tablename
 	$db_name = 'serverQueue';
 
 	//Create mysql connection

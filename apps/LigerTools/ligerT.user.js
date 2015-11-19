@@ -1,8 +1,8 @@
-// ==UserScript== 
+// ==UserScript==
 // @name LigerTools
 // @namespace   http://ligerdriver.xyz/apps/ligerTools/
 // @icon        http://ligerdriver.xyz/assets/images/Liger_logo.png
-// @downloadURL http://ligerdriver.xyz/apps/ligerTools/ligerT.user.js
+// @downloadURL http://ligerdriver.xyz/apps/LigerTools/ligerT.user.js
 // @description Multi-Tool for Managed Services
 // @include     *://toolzilla*
 // @include     *://crm*
@@ -16,6 +16,6 @@
 (function() {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = 'http://ligerdriver.xyz/apps/ligerTools/loader.js';
+  script.src = 'http://ligerdriver.xyz/apps/LigerTools/loader.js';
   document.getElementsByTagName('head')[0].appendChild(script);
 })();

@@ -61,25 +61,37 @@
       </nav>
       <div class="container-fluid">
         <div class="jumbotron">
-          <h1>Please Contact Us</h1>
-          <p>If you would like to see new apps or to for any projects please fill out the form below:</p>
-          <div class="form-group">
-            <label form=""></label>
-            <input type="text" class="form-control" id="" placeholder="name">
-            <input type="text" class="form-control" id="" placeholder="email address" name="emailAddress" value="">
-            <p class="help-block">Help text here.</p>
+          <div class="row">
+            <h1>Please Contact Us</h1>
+            <p>If you would like to see new apps or to for any projects please fill out the form below:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <form>
+              <div class="form-group">
+                <label for="InputName">Name</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="John Smith/Jane Doe">
+              </div>
+              <div class="form-group">
+                <label for="InputEmail">Email</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="john.smith@example.com">
+              </div>
+              <div class="form-group">
+                <label for="requests">Requests</label>
+                <textarea class="form-control" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-default">Send Request</button>
+            </form>
           </div>
         </div>
       </div>
-
-    </div>
-
-    <!-- Bootstrap core JavaScript
+      <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
-</html>
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+  </html>

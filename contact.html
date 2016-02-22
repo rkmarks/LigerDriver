@@ -14,17 +14,14 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
   </head>
 
   <body>
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -32,43 +29,83 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">LigerDriver Technologies</a>
+          <a class="navbar-brand" href="https://ligerdriver.com/">LigerDriver Technologies</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tools <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="../apps/ManagdCans.html" target="_blank">Managed Cans</a></li>
+            <li>
+              <a href="https://ligerdriver.com/">Home</a>
             </li>
-          </ul>
-        </div><!--/.nav-collapse -->
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tools
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="tools.html">LigerJS</a>
+                </li>
+                <li>
+                  <a href="https://ligerdriver.com/LigerPanzer/">Liger Panzer</a>
+                </li>
+              </li>
+            </ul>
+        </ul>
+        <ul>
+          <li>
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username"/>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password"/>
+              </div>
+              <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+          </div>
+      </ul>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <div class="row">
+        <h1>Please Contact Us</h1>
+        <p>If you would like to see new apps or to for any projects please fill out the form below:</p>
       </div>
-    </nav>
-<div class="container-fluid">
-  <div class="jumbotron">
-  <h1>Please Contact Us</h1>
-    <p>If you would like to see new apps or to for any projects please fill out the form below:</p>
-    <div class="form-group">
-      <label form=""></label>
-      <input type="text" class="form-control" id="" placeholder="name">
-      <input type="text" class="form-control" id="" placeholder="email address" name="emailAddress" value="">
-      <p class="help-block">Help text here.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <form>
+          <div class="form-group">
+            <label for="InputName">Name</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="John Smith/Jane Doe">
+          </div>
+          <div class="form-group">
+            <label for="InputEmail">Email</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="john.smith@example.com">
+          </div>
+          <div class="form-group">
+            <label for="requests">Requests</label>
+            <textarea class="form-control" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default">Send Request</button>
+        </form>
+      </div>
     </div>
   </div>
-</div>
 
-</div>
-
-    <!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
 </html>
